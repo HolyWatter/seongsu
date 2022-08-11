@@ -1,0 +1,113 @@
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+body{
+    width : 1200px;
+    padding : 20px;
+}
+.subtitle{
+    font-weight : 700;
+    font-size : 40px;
+}
+.subtitle > p {
+    margin : 0px;
+}
+
+.maintext{
+    font-size: 20px;
+    color : grey;
+}
+header{
+    width : 1200px;
+    height : 100px;
+    font-size : 80px;
+    font-weight : 700;
+    text-align: center;
+    padding : 30px;
+    justify-content: center;
+    border-bottom : .1px solid #dae1e6;
+    margin-bottom: 30px;
+    padding : 0;
+}
+
+#photo{
+    margin : 0px;
+    display: inline-block;
+    width : 400px;
+    height : 500px;
+    background-size: 450px 500px;
+    background-repeat: no-repeat;
+    background-image: url(./profile.JPG);
+    background-position: -18px 2px;
+    margin-left : 30px;
+}
+
+#profile{
+    width : 1200px;
+    height : 500px;
+    display : flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+#profile-text{
+    
+    margin-left : 30px;
+    width : 400px;
+    height : 500px;
+}
+
+
+
+#main{
+    display : flex;
+    flex-direction: row;
+    width : 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#img1{
+    display : block;
+    width : 200px;
+    height : 100px;
+    background-size: 200px 100px;;
+    background-image: url(./todo.png);
+}
+#img2{
+    display : block;
+    width : 200px;
+    height : 100px;
+    background-size: 200px 100px;;
+    background-image: url(./naver.png);
+}
+#dev-flex {
+    display : flex;
+    flex-direction: row;
+}
+#develop{
+    width : 600px;
+    display : flex;
+    flex-direction: row;
+}
+#img3{
+    display : block;
+    width : 200px;
+    height : 100px;
+    background-size: 200px 100px;;
+    background-image: url(./bowling.jpeg);
+}
+#img4{
+    display : block;
+    width : 200px;
+    height : 100px;
+    background-size: 200px 100px;;
+    background-image: url(./health.png);
+}
+
+main{
+    padding-bottom : 30px;
+    border-bottom : .1px solid #dae1e6;
+    margin-bottom: 30px;
+}
