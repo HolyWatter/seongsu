@@ -1,194 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+<link rel="stylesheet" href="./introduce.css">
 <head>
     <meta charset="UTF-8">
-    <style>
-        *{
-    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
-}
-body{
-    width : 1200px;
-    padding : 20px;
-}
-.subtitle{
-    font-weight : 700;
-    font-size : 40px;
-}
-.subtitle > p {
-    margin : 0px;
-}
-
-.maintext{
-    font-size: 20px;
-    color : grey;
-}
-header{
-    width : 1200px;
-    height : 100px;
-    font-size : 80px;
-    font-weight : 700;
-    text-align: center;
-    padding : 30px;
-    justify-content: center;
-    border-bottom : .1px solid #dae1e6;
-    margin-bottom: 30px;
-    padding : 0;
-}
-
-#photo{
-    margin : 0px;
-    display: inline-block;
-    width : 400px;
-    height : 500px;
-    background-size: 450px 500px;
-    background-repeat: no-repeat;
-    background-image: url(./profile.JPG);
-    background-position: -18px 2px;
-    margin-left : 30px;
-}
-
-#profile{
-    width : 1200px;
-    height : 500px;
-    display : flex;
-    flex-direction: row;
-    justify-content: start;
-    margin-bottom: 30px;
-}
-#profile-text{
-    
-    margin-left : 30px;
-    width : 400px;
-    height : 500px;
-}
-
-
-
-#main{
-    display : flex;
-    flex-direction: row;
-    width : 1200px;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-}
-
-#img1{
-    display : block;
-    width : 200px;
-    height : 100px;
-    background-size: 200px 100px;;
-    background-image: url(./todo.png);
-}
-#img2{
-    display : block;
-    width : 200px;
-    height : 100px;
-    background-size: 200px 100px;;
-    background-image: url(./naver.png);
-}
-#dev-flex {
-    display : flex;
-    flex-direction: row;
-}
-#develop{
-    width : 600px;
-    display : flex;
-    flex-direction: row;
-}
-#img3{
-    display : block;
-    width : 200px;
-    height : 100px;
-    background-size: 200px 100px;;
-    background-image: url(./bowling.jpeg);
-}
-#img4{
-    display : block;
-    width : 200px;
-    height : 100px;
-    background-size: 200px 100px;;
-    background-image: url(./health.png);
-}
-
-main{
-    padding-bottom : 30px;
-    border-bottom : .1px solid #dae1e6;
-    margin-bottom: 30px;
-}
-
-    </style>
     <title>박성수를 소개합니다</title>
 </head>
 <body>
     <header>
         <div>PARK SEONG SU</div>
     </header>
+    <nav>
+        <a href="./index.html">HOME</a>
+        <a href="./index_profile.html">PROFILE</a>
+        <a href="./index_hobby.html">HOBBY</a>
+        <a href="./index_develop.html">DEVELOP</a>
+        <a href="./index_favorite.html">FAVORITE</a>
+        <a href="./index_contact.html">CONTACT</a>
+    </nav>
     <main>
-        <div id="profile">
-            <div>
-                <p id="photo"></p>
-            </div>
-            <div id="profile-text">
-                <div class="subtitle">
-                    <p>Profile</p>
-                </div>
-                <div class="maintext">
-                    <p>이름 : 박성수</p>
-                    <p>생년월일 : 97. 10. 04</p>
-                    <p>고향 : 경기도 부천</p>
-                    <p>사는 곳 : 경기도 의정부</p>
-                    <p>혈액형 : O </p>
-                    <p>MBTI : ISFP</p>
-                </div>
-                <div class="subtitle">
-                    <p>WECODE 이전</p>
-                </div>
-                <div class="maintext"> 
-                    <p>한성대학교 행정학과 졸업</p>
-                    <p>ROTC 58th 임관</p>
-                    <p>22.06.30 중위전역</p>
-                </div>
-            </div>
-            
-        </div>
-        <div id="main">
-            <div id="develop-experiecne">
-                <div class="subtitle">
-                    <p>개발경험</p>
-                </div>
-                <div id="develop">
-                    <div>
-                        <p id="img1"></p>
-                        <p id="img2"></p>
-                    </div>
-                    <div style="margin-left : 30px;" class="maintext">
-                        <p>희망분야 : FrontEnd</p>
-                        <p>공부 기간 약 1개월</p>
-                        <p>TodoList제작 (따라치기만)</p>
-                        <p>NAVER 클론코딩(기능구현 X)</p>
-                    </div>
-                </div>
-            </div>
-            <div id="hobby">
-                <div class="subtitle">
-                    <p>취미</p>
-                </div>
-                <div id="dev-flex">
-                    <div class="maintext">
-                        <p>헬스 : 경력 1년(헬린이)</p>
-                        <p>볼링 : 하이스코어 277</p>
-                        <p>스크린 골프 : 100타 이상</p>
-                        <p>축구 농구 등 모든 구기종목, 스포츠</p>
-                        <p>영화취향 : 로맨스, 멜로</p>
-                    </div>
-                    <div style="margin-left : 30px;">
-                        <p id="img3"></p>
-                        <p id="img4"></p>
-                    </div>
-                </div>
-            </div>
-        </div>     
+      <div style="text-align : center;
+        font-size : 50px; padding-top : 100px;
+        font-weight : 700;">
+          <p>안녕하세요</p>
+          <p>제 페이지에 오신 것을 환영합니다</p>
+          <p>재밌게 보고 가세요</p>
+      </div>
     </main>
     <footer>
         <div>
