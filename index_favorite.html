@@ -7,7 +7,10 @@
 </head>
 <body>
     <header>
-        <div>PARK SEONG SU</div>
+        <div>
+            <span id="span"></span>
+        </div>
+        <h1>PARK SEONG SU</h1>
     </header>
     <nav>
         <a href="./index.html">HOME</a>
@@ -25,30 +28,36 @@
                     <span id="movie1"></span>
                     <li>라라랜드</li>
                     <span id="movie2"></span>
-                    <li>나는 내일 어제의 너와 만난다</li>
+                    <li>미드나잇 인 파리</li>
                     <span id="movie3"></span>
                     <li>첨밀밀</li>
                 </ul>
             </div>
             <div>
                 <span class="middletext">SONG</span>
-                <ul class="listbox" style="list-style : none;">
-                    <div class="songbox">
-                        <li style="font-size : 25px;">신지훈 - 시가 될 이야기</li>
-                        <a style ="color : grey;" href="https://youtu.be/rbIJV4aJRIA">들어보기</a>
-                    </div>
-                    <div class="songbox">
-                        <li style="font-size : 25px;">허회경 - 김철수씨 이야기</li>
-                        <a style ="color : grey;"href="https://youtu.be/0kmHEKcRjpo">들어보기</a>
-                    </div>
-                    <div class="songbox">
-                        <li style="font-size : 25px;">짙은 - 잘 지내자 우리</li>
-                        <a style ="color : grey;" href="https://youtu.be/FpeKRO1ouiA">들어보기</a>
-                    </div>
-                    <div class="songbox">
-                        <li style="font-size : 20px;">너드커넥션 - 좋은 밤, 좋은 꿈</li>
-                        <a style ="color : grey;" href="https://youtu.be/H2ncCtw2YxA">들어보기</a>
-                    </div>
+                <br />
+                <select id ="Select">
+                    <option value="1">인디</option>
+                    <option value="2">Kpop</option>
+                    <option value="3">Jazz</option>
+                </select>
+                <ul id = "songbox" class="listbox" style="list-style : none;">
+                    <li>
+                        <span id="song1"></span><br/>
+                        <a href ="" id = "a1"></a>
+                    </li>
+                    <li>
+                        <span id="song2"></span><br/>
+                        <a id = "a2"></a>
+                    </li>
+                    <li>
+                        <span id="song3"></span><br/>
+                        <a id = "a3"></a>
+                    </li>
+                    <li>
+                        <span id="song4"></span><br/>
+                        <a id = "a4"></a>
+                    </li>
                 </ul>
             </div>
             <div >
@@ -87,4 +96,6 @@
         </div>
     </footer>
 </body>
+<script src="./hello.js"></script>
+<script src="./randomsong.js"></script>
 </html>

@@ -7,7 +7,10 @@
 </head>
 <body>
     <header>
-        <div>PARK SEONG SU</div>
+        <div>
+            <span id="span"></span>
+        </div>
+        <h1>PARK SEONG SU</h1>
     </header>
     <nav>
         <a href="./index.html">HOME</a>
@@ -21,9 +24,13 @@
       <div style="text-align : center;
         font-size : 50px; padding-top : 100px;
         font-weight : 700;">
-          <p>안녕하세요</p>
-          <p>제 페이지에 오신 것을 환영합니다</p>
-          <p>재밌게 보고 가세요</p>
+            <form id="IPF">
+                <input id="NameInput"type="text" placeholder="이름을 입력해 주세요"/>
+                <button id="ClickButton">Click</button>
+            </form>
+            <h1 id="IPP"></h1>
+            <p>제 페이지에 오신 것을 환영합니다</p>
+            <p>재밌게 보고 가세요</p>
       </div>
     </main>
     <footer>
@@ -47,6 +54,7 @@
             width : 60px; ">Address</span>
             <span style="color : grey; margin-left:20px;">경기도 의정부시 호원동 XXX-XX</span>
         </div>
+    </footer>
 </body>
-</footer>
+<script src="./name.js"></script>
 </html>

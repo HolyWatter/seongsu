@@ -1,0 +1,540 @@
+*{/* css에서 모든 태그를 입력하는 선택자가 '*' */
+    box-sizing: border-box; /*원래 width height설정하면 content-box기준으로 크기가 설정, 이걸 border기준으로 바꿔주는게 border-box*/
+}
+
+/*
+css 우선순위 
+!important붙이면 바로 1순위 (자제해서 써라)
+그 다음 id > class > 기본 태그 순
+동 순위라면 갯수 많으면 우선순위 
+*/
+
+html, body {
+    margin : 0;
+    padding : 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+#head-top{
+    text-align: right;
+    color : #404040;
+    letter-spacing: -1px;
+    font-size: 11px;
+}
+#head-top :first-child{
+    text-decoration: underline;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    }
+
+header{
+    width : 1280px;
+    height: 161px;
+}
+
+#header_logo a {
+    width : 195px;
+    height: 45px;
+    display : inline-block;
+    background: url(./sp_main_4f8ccb.png);
+    background-position: 2px -135px;
+    background-size: 200%;
+    vertical-align : middle;
+    position : relative;
+    top : 50px;
+}
+#header_logo span {
+    display : none;
+}
+
+.center-align {
+    margin : 0 auto;
+    width : 1190px;
+}
+#header_logo{
+    display : inline-block;
+}
+
+
+
+/*
+header_search >h2 : 자식선택자
+header_search h2 : 자손선택자
+*/
+#header_search {
+    display : inline-block;
+}
+#header_search > h2 {
+    display : none;
+}
+#header_search fieldset {
+    padding : 12px 0px 12px 10px; /*위 오른쪽 아래쪽 왼쪽 순*/
+    margin-left : 20px;
+    width : 521px;
+    height: 49px;
+    display : inline-block;
+    border : 2px solid #03cf5d; /* hex표기법, 컬러 */
+    vertical-align : middle;
+    position : relative;
+    top : 50px;
+}
+
+#header_search fieldset input {
+    border : none;
+    padding : 0;
+    outline : none;
+    vertical-align : top;
+    width : 405px;
+    height : 23px;
+}
+
+#header_search fieldset button{
+    width : 49px;
+    height : 49px;
+    border : none;
+    padding : 0;
+    background : #03cf5d;
+    position : absolute;
+    right : 0px;
+    top : -2px;
+}
+
+#search-image {
+    display : inline-block;
+    width : 22px;
+    height : 22px;
+    background-image : url(./sp_main_4f8ccb.png);
+    background-position : -420px 0px;
+    display : inline-block;
+    background-size: 457px 434px;
+}
+
+nav {
+    height : 52px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+    
+}
+
+nav ul {
+    margin : 0;
+    padding : 0;
+    list-style: none;
+    display : inline-block;
+    position : relative;
+    top : 11px;
+    vertical-align: top;
+}
+nav #ulgreen{
+    color : #03cf5d;
+}
+
+nav ul li {
+    display : inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    vertical-align: top;
+    margin : 0px 0px 0px 5px;
+}
+
+.mailicon{
+    display : inline-block;
+    width : 21px;
+    height : 21px;
+    background-image : url(./sp_main_4f8ccb.png);
+    background-position: -420px -72px;
+    background-size: 457px 434px;
+    position : relative;
+    top : -7px;
+}
+.shoppingicon{
+    display : inline-block;
+    width : 24px;
+    height : 30px;
+    background-image : url(./sp_main_4f8ccb.png);
+    background-position: -155px 51px;
+    background-size: 457px 434px;
+    
+}
+.shoppingliveicon{
+    display : inline-block;
+    width : 54px;
+    height : 30px;
+    background-image : url(./sp_main_4f8ccb.png);
+    background-position: -202px 140px;
+    background-size: 457px 434px;
+    vertical-align: top;
+}
+.tvicon{
+    display : inline-block;
+    width : 12px;
+    height : 14px;
+    background-image : url(./sp_main_4f8ccb.png);
+    background-position: -900px -49px;
+    background-size: 457px 434px;    
+    position : relative;
+    top : -7px;
+}
+#main-first{
+    display : flex;
+    flex-direction: row;
+    width : 1190px;
+    justify-content: space-around;
+}
+
+
+#advertise {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12); 
+    width : 750px;
+    height : 135px;
+    display : inline-block;
+    background-image: url(./advertise.jpeg);
+    margin-top : 20px;
+    position : relative;
+    left : -23px;   
+}
+#main-login{
+    width : 350px;
+    height: 135px;
+    display: inline-block;
+    padding: 16px 16px 12px 17px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    position : relative;
+    top : 20px;
+    left : -45px;
+}
+
+#loginbutton{
+    display : inline-block;
+    width : 314px;
+    height : 50px;
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    text-align: center;
+    padding : 13px;
+    font-weight: 700;
+    color : #fff;
+    margin-top : 15px;
+}
+
+#news{
+    font-size: 13px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+#main-two {
+    display: flex;
+    width : 1190px;
+    margin-top : 20px;
+}
+
+#stock-box{
+    display : inline-block;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    width : 350px;
+    height: 47px;
+    vertical-align: top;
+    position : relative;
+    left : 22px;
+    padding : 8px;
+}
+#icon7{
+    display : inline-block;
+    width : 26px;
+    height : 26px;
+    background-image: url(./sp_main_4f8ccb.png);
+    background-size: 457px 434px;
+    background-position: -58px 132px;
+
+}
+
+#icon8{
+    display : inline-block;
+    width : 26px;
+    height : 26px;
+    background-image: url(./sp_main_4f8ccb.png);
+    background-size: 457px 434px;
+    background-position: -106px 132px;
+}
+
+#stock-box span{
+    vertical-align: middle;
+}
+#icon1{
+    display: inline-block;
+    background-image: url(./sp_main_4f8ccb.png);
+    width : 10px;
+    height : 18px;
+    background-position: -449px 47px;
+    background-size: 457px 434px;
+    position : relative;
+    top : 3px;
+}
+
+#articles{
+    display : inline-block;
+    font-size: 13px;
+    width : 500px;
+}
+
+#newsbox {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width : 750px;
+    height : 49px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    line-height: 24px;
+    padding : 12px;
+    vertical-align: top;
+}
+#newsbox .box1 {
+    font-weight: 700;
+    font-size: 13px;
+    margin-left : 6px;
+}
+
+#home{
+    color: #3565c9;
+}
+
+#main-three{
+    width : 1190px;
+    margin-top: 30px;
+}
+#mainthree-left {
+    display : inline-block;
+    width : 750px;
+    height : 750px;
+
+}
+#news-stand {
+    display : inline-block;
+    height : 56px;
+    font-weight: 700;
+    width : 750px;
+    vertical-align: top;
+}
+#icon2{
+    display: inline-block;
+    background-image: url(./sp_main_4f8ccb.png);
+    width : 27px;
+    height : 30px;
+    background-position: -336px 90px;
+    background-size: 457px 434px;
+    position : relative;
+    top : 10px;
+    right : -2px;
+}
+
+#menubox {
+    display: inline-block;
+    position: relative;
+    right : -340px;
+}
+
+#icon3{
+    display: inline-block;
+    background-image: url(./sp_main_4f8ccb.png);
+    width : 18px;
+    height : 18px;
+    background-position: -47px 18px;
+    background-size: 457px 434px;
+    position: relative;
+    top : 2px;
+}
+#icon4{
+    display: inline-block;
+    background-image: url(./sp_main_4f8ccb.png);
+    width : 15px;
+    height : 15px;
+    background-position: 472px -17px;
+    background-size: 457px 434px;
+    margin-left: 13px;
+}
+#icon5{
+    display: inline-block;
+    background-image: url(./sp_main_4f8ccb.png);
+    width : 18px;
+    height : 18px;
+    background-position: 1px 18px;
+    background-size: 457px 434px;
+    margin-left: 13px;
+}
+
+#newslist {
+    padding : 0;
+    list-style: none;
+    display : inline-block;
+}
+#newslist li{
+    display : flex;
+    float : left;
+    width : 124px;
+    height : 65px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+
+#newslistbox{
+    display : inline-block;
+    width : 750px;
+}
+
+#today-letter {
+    display : inline-block;
+    width : 750px;
+}
+#letter-theme{
+    margin-top: 20px;
+}
+
+#letter-theme span {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    float : left;
+    width : 92px;
+    height: 48px;
+    border: 1px solid #dae1e6;
+}
+#letter {
+    display : inline-block;
+    width : 750px;
+    margin-top: 15px;
+}
+.letter1{
+    margin-top:20px;
+    display : flex;
+    flex-direction: row;
+}
+#letterimg1{
+    display:inline-block;
+    width : 170px;
+    height: 114px;
+    background-image: url(./letter1.jpeg);
+}
+
+#letterimg2{
+    display:inline-block;
+    width : 170px;
+    height: 114px;
+    background-image: url(./letter2.jpeg);
+}
+
+#letterimg3{
+    display:inline-block;
+    width : 170px;
+    height: 114px;
+    background-image: url(./letter3.jpeg);
+}
+
+.letter1  .lettertheme{
+    display: inline-block;
+    color: #35ae5e;
+    font-weight: 700px;
+    width : 512px;
+    height : 16px;
+    vertical-align: top;
+    margin-left : 15px;
+    margin-bottom : 10px;
+
+}
+#letter .lettername{
+    display: inline-block;
+    font-weight: 700px;
+    height : 20px;
+    width : 512px;
+    vertical-align: top;
+    margin-left : 15px;
+    margin-bottom : 10px;
+}
+.lettermain {
+    display: inline-block;
+    width : 512px;
+    height : 40px;
+    margin-left : 15px;
+    margin-bottom : 10px;
+}
+
+#mainthree-right{
+    display : inline-block;
+    width : 350px;
+    height : 924px;
+    vertical-align: top;
+}
+#advertise-second {
+    display : inline-block;
+    width : 350px;
+    height : 200px;
+    background-image: url(./advertise2.jpeg);
+    background-size: 457px 200px;
+    vertical-align: top;
+}
+#shoppingbox{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width : 350px;
+    height : 45px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+#icon6{
+    display: inline-block;
+    width : 25px;
+    height : 23px;
+    background-image: url(./sp_main_4f8ccb.png);
+    background-position : 38px -24px;
+    background-size: 457px 434px;
+}    
+#trendshop span {
+    display : inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-weight : 700;
+}
+
+#shopmall > span {
+    display : inline-block;
+    font-weight : 700;    
+}
+#shoppingmalllist{
+    padding : 12px;
+    font-weight : 700;
+    font-size : 12px;
+    width : 364px;
+    height : 114px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+}
+
+#shoppingmalllist span {
+    display : inline-block;
+    width : 88px;
+    height : 22px;
+}
+
+#shoppingnews {
+    width : 350px;
+    height : 264px;
+    border-bottom : 1px solid #dae1e6;
+    padding : 8px;
+}
+
+.mall{
+    font-weight :700;
+}
