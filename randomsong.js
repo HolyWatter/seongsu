@@ -81,7 +81,7 @@ function onChange(){
     A3.href = Jazzsongs[2].url
     Song4.innerText = `${Jazzsongs[3].songs}`
     A4.innerText = "들어보기";
-    A4.href = Jazzsongs[3].urlJazzsongs
+    A4.href = Jazzsongs[3].url
     indiesongs}
 }
 
